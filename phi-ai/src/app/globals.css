@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--brand-primary: #2563EB;
+	--brand-accent: #FF6B00;
+	--brand-secondary: #00C9A7;
+	--brand-base: #F7F8FC;
+	--brand-neutral: #1F2937;
+}
+
+html, body {
+	@apply bg-[var(--brand-base)] text-[var(--brand-neutral)];
+}
+
+.container-max {
+	@apply max-w-6xl mx-auto px-4;
+}
+
+.btn-primary {
+	@apply inline-flex items-center gap-2 rounded-lg bg-primary text-white px-4 py-2 shadow-soft hover:opacity-95 transition;
+}
+.btn-accent {
+	@apply inline-flex items-center gap-2 rounded-lg bg-accent text-white px-4 py-2 shadow-soft hover:opacity-95 transition;
+}
+.card {
+	@apply bg-white rounded-xl shadow-soft border border-gray-200;
+}
